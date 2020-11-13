@@ -1,0 +1,248 @@
+/* --------------------------------------------------------
+Style Sheet for Gotcha Distributor Dashboard
+
+Last modified: 20-11-2017 by Jhosseeth Naranjo
+Author: Jhosseeth Naranjo
+===========================================================
+CONTENTS:
+=Resets & General
+=Navigation
+=Header
+=Main Content
+=Lists
+----------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif');
+
+/* ================================================================ **
+**                         RESETS & GENERAL
+** ================================================================ */
+
+body.cumberland_body { background-color: #f2f2f2; }
+.main_content {	padding: 100px 50px; }
+.tab-pane {	padding: 40px 10px; }
+
+
+/* ------------------- HELPER CLASSES ------------------- */
+
+.margin_bottom_30 {	margin-bottom: 30px; }
+.bg-white { background-color: white !important; }
+
+
+/* ------------------- MEDIA ------------------- */
+
+.media { margin-bottom: 50px; }
+.media img {
+	max-height: 100px;
+	float: left;
+	margin-right: 20px;
+}
+.media-body h4 {
+	border-bottom: solid 1px grey;
+	margin-bottom: 0px;
+}
+.media-body p {
+	color: grey;
+}
+
+
+/* ------------------- OTHERS ------------------- */
+
+.church-img {
+	max-width: 100%;
+	border-radius: 8px;
+}
+#map {
+	border-radius: 8px;
+}
+
+
+/* ================================================================ **
+**                          NAVBAR HEADER
+** ================================================================ */
+header > .navbar {
+	min-height: 70px;
+	background-color: #fcfcfc;
+	box-shadow: 0px 0px 5px 1px rgba(144, 143, 143, 0.5);
+}
+header .navbar-brand { padding: 0px; }
+header .navbar-default .navbar-nav>li>a {
+	min-height: 70px;
+	padding-top: 25px;
+}
+.logo_cumberland {
+	max-height: 60px;
+	margin: 5px;
+}
+
+.navbar-nav .divider {
+	border-left: 1px solid #ddd;
+    height: 40px;
+    margin-top: 15px;
+}
+#LoginBtn {
+    min-height: 30px;
+    padding: 3px 10px;
+    margin: 20px 15px 0px;
+}
+
+
+/* ================================================================ **
+**                          SIDE NAVIGATION
+** ================================================================ */
+
+#CumberlandNav {
+	min-height: 100%;
+    padding: 120px 0px 0px;
+	background-color: #102742;
+}
+#CumberlandNav .title {
+	padding: 0px 10px;
+}
+#CumberlandNav h3 {
+	color: white;
+	font-family: 'Noto Serif', serif;
+	padding-left: 10px;
+	padding-bottom: 8px;
+	border-bottom: solid 1px #2D4469;
+}
+#CumberlandNav h3 small {
+	color: #6382B6;
+	font-family: 'Roboto', sans-serif;
+}
+#CumberlandNav a {
+	color: #acbad4;
+	font-size: 16px;
+	padding-left: 40px;
+}
+#CumberlandNav a:hover,
+#CumberlandNav a:focus {
+	color: white;
+	background-color: #07131E;
+}
+#CumberlandNav li.divider {
+	margin: 30px 30px 10px;
+	border-bottom: solid 1px #2D4469;
+}
+
+
+/* ------------------- MIEMBROS ------------------- */
+
+.members {
+	max-width: 150px;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+.members:hover {
+	cursor: pointer;
+}
+.members img {
+    max-width: 100%;
+	border-radius: 10px 10px 0px 0px
+}
+.members p {
+	color: white;
+    padding: 5px;
+    font-weight: bold;
+	background-color: #b35900;
+	border-radius: 0px 0px 10px 10px
+}
+.member-detail {
+	margin-top: 120px;
+}
+
+#liderazgo .members {
+	max-width: 120px;
+	margin-right: 10px;
+}
+#liderazgo .members:hover { cursor: default; }
+#liderazgo .members .name {
+	margin: 0px;
+	opacity: 0.6;
+	font-size: 11px;
+	text-align: center;
+	border-radius: 0px;
+	background-color: #0059b3;
+}
+#liderazgo .members .role {
+	font-size: 10.5px;
+	text-align: center;
+	background-color: #003366;
+}
+
+
+/* ------------------- COMITES ------------------- */
+
+.commission {
+	margin-bottom: 30px;
+}
+.commissions_list {
+	margin-top: 50px;
+}
+.main_content .commission img {
+	max-height: 64px;
+	float: left;
+	margin-right: 15px;
+}
+
+/* ------------------- IGLESIAS ------------------- */
+
+#map {
+	height: 400px;
+	width: 100%;
+}
+.churchs {
+	max-width: 250px;
+	display: inline-block;
+	margin: 0px 20px 20px 0px;
+}
+.churchs a { color: black; }
+.churchs a:hover {
+	color: black;
+	text-decoration: none;
+}
+.churchs img {
+	max-width: 250px;
+	border-radius: 10px 10px 0px 0px
+}
+.churchs .caption {
+	padding: 8px 10px 10px;
+	background-color: white;
+	border-radius: 0px 0px 10px 10px
+}
+.churchs h3,
+.churchs p {
+	margin: 0px;
+}
+
+
+/* ================================================================ **
+**                          	CHARTS
+** ================================================================ */
+
+canvas { z-index: 10; }
+.labels-chart {	margin-top: 50px; }
+dd span {
+	left: 15px;
+	position: relative;
+}
+#activeMembers { border-left: solid 15px #66c2ff; }
+#inactiveMembers { border-right: solid 15px #006bb3; }
+#activeMembersAssist { border-right: solid 15px #ffcc66; }
+#inactiveMembersAssist { border-right: solid 15px #ff8533; }
+#noMembersAssist { border-right: solid 15px #993300; }
+.total-label-chart {
+	font-size: 14px;
+	margin-top: 10px;
+	text-align: center;
+}
+dl.total-label-chart dt,
+dl.total-label-chart dd {
+	line-height: 1 !important;
+}
+.age-stats dl {
+	font-size: 12px;
+	margin-top: 25px;
+}
